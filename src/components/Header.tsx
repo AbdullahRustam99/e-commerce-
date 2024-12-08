@@ -10,8 +10,8 @@ const Header = () => {
   return ( 
     <>
       <div className="w-full p-2 text-center text-[14px] text-black bg-[#F5F5F5] max-w-[1440px]">
-        <div className="lg:flex lg:items-center lg:justify-center lg:gap-32 w-full">
-          <div className="lg:flex lg:justify-between w-full ">
+        <div className="flex lg:items-center lg:justify-center lg:gap-32 w-full">
+          <div className="flex lg:justify-between w-full ">
             <div className="ml-24">
               <Image src={toplogo} alt="top logo" />
             </div>

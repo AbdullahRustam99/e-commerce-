@@ -19,12 +19,12 @@ const ProductDetails = () => {
               {/* Shoe 1 */}
               <div className="text-center">
                 <h3 className="text-xl font-semibold mb-2">
-                  Nike Air Force 1 Mid '07
+                  Nike Air Force 1 Mid 07
                 </h3>
-                <p className="text-gray-500 mb-4">Men's Shoes</p>
+                <p className="text-gray-500 mb-4">Mens Shoes</p>
                 <img
                   src="/path/to/nike-air-force-1.jpg"
-                  alt="Nike Air Force 1 Mid '07"
+                  alt="Nike Air Force 1 Mid 07"
                   className="w-full h-auto object-cover mb-4"
                 />
                 <p className="text-gray-500">1 Colour</p>
@@ -36,7 +36,7 @@ const ProductDetails = () => {
                 <h3 className="text-xl font-semibold mb-2">
                   Nike Court Vision Low Next Nature
                 </h3>
-                <p className="text-gray-500 mb-4">Men's Shoes</p>
+                <p className="text-gray-500 mb-4">Mens Shoes</p>
                 <img
                   src="/path/to/nike-court-vision.jpg"
                   alt="Nike Court Vision Low Next Nature"
@@ -51,7 +51,7 @@ const ProductDetails = () => {
                 <h3 className="text-xl font-semibold mb-2">
                   Nike Air Force 1 PLT.AF.ORM
                 </h3>
-                <p className="text-gray-500 mb-4">Women's Shoes</p>
+                <p className="text-gray-500 mb-4">Womens Shoes</p>
                 <img
                   src="/path/to/nike-air-force-1-plt.jpg"
                   alt="Nike Air Force 1 PLT.AF.ORM"
