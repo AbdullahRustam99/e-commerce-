@@ -23,7 +23,7 @@ import img16 from "@/img/ProductPageImg/Rectangle (16).png";
 import img17 from "@/img/ProductPageImg/Rectangle (17).png";
 import img18 from "@/img/ProductPageImg/Rectangle (18).png";
 import Image from "next/image";
-import Link from "next/link";
+
 
 const ProductDetails = () => {
   return (
@@ -139,7 +139,7 @@ const ProductDetails = () => {
               <h3 className="text-xl font-semibold mb-2">
                 Nike Standard Issue
               </h3>
-              <p className="text-gray-500 mb-4">Women's Basketball Jersey</p>
+              <p className="text-gray-500 mb-4">Womens Basketball Jersey</p>
               <p className="text-gray-500">1 Colour</p>
               <p className="text-lg font-bold"> $ 2 895.00</p>
             </div>
@@ -286,7 +286,7 @@ const ProductDetails = () => {
               <h3 className="text-xl font-semibold mb-2">
                 Nike Dri-FIT Run Division Rise 365
               </h3>
-              <p className="text-gray-500 mb-4">Men's Running Tank</p>
+              <p className="text-gray-500 mb-4">Mens Running Tank</p>
               <p className="text-gray-500">1 Colour</p>
               <p className="text-lg font-bold">$18,695.00</p>
             </div>
