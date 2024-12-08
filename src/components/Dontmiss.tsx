@@ -13,7 +13,7 @@ const DontMiss = () => {
         </div>
       </div>
       <div className=" flex justify-center items-center gap-3 flex-col">
-        <p className="text-[52px] font-medium">FLIGHT ESSENTIALS</p>
+        <p className="md:text-[52px] text-[20px] font-medium">FLIGHT ESSENTIALS</p>
         <p className="text-[15px] ">
           Your built-to-last, all-week wears—but with style only Jordan Brand
           can deliver.

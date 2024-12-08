@@ -17,18 +17,18 @@ const main = () => {
             </span>
           </p>
         </div>
-        <div className="w-full flex-col flex gap-8 text-center px-10 justify-center items-center mb-4">
+        <div className="w-full flex-col flex md:gap-8 gap-4 text-center px-10 justify-center items-center mb-4">
           <div>
             <Image src={Banner} alt="banner" />
           </div>
           <div className="flex flex-col justify-center gap-5 ">
             <div>
               <p className="text-[15px] font-medium ">First Look</p>
-              <h1 className="text-[56px] font-medium leading-[70px]">
+              <h1 className="md:text-[56px] text-[30px] font-medium leading-[70px]">
                 Nike Air Max Pulse
               </h1>
             </div>
-            <p className="w-[500px] text-[15px]">
+            <p className="md:w-[500px] w-[255px] text-[15px]">
               Extreme comfort. Hyper durable. Max volume. Introducing the Air
               Max Pulse —designed to push you past your limits and help you go
               to the max.

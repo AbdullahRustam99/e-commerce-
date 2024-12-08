@@ -14,11 +14,11 @@ const Featured = () => {
             <Image src={Banner} alt="banner" />
           </div>
 
-          <h1 className="text-[56px] font-medium leading-[70px]">
+          <h1 className="md:text-[56px] text-[25px] font-medium leading-[30px] md:leading-[70px]">
             STEP INTO WHAT FEELS GOOD
           </h1>
 
-          <p className="w-[500px] text-[15px]">
+          <p className="md:w-[500px] w-[340px] text-[15px]">
             Cause everyone should know the feeling of running in that perfect
             pair.
           </p>

@@ -15,7 +15,7 @@ const Products = () => {
             <div className="flex justify-between items-center w-full  ">
               <p className="font-medium text-[22px]">Best of Air Max</p>
             </div>
-            <div className="flex items-center justify-center gap-3   ">
+            <div className="md:flex items-center justify-center gap-3 hidden   ">
               <p className="font-medium"> Shop</p>
               <div className="bg-[#E5E5E5] w-[48px] h-[48px] rounded-[300px] flex justify-center items-center">
                 <IoIosArrowBack size={25} />
@@ -25,7 +25,7 @@ const Products = () => {
               </div>
             </div>
           </div>
-          <div className="overflow-hidden  flex justify-start items-center lg:flex-nowrap md:flex-wrap gap-5 ">
+          <div className="overflow-hidden  flex justify-start items-center  lg:flex-nowrap flex-wrap gap-5 ">
             <Card
               img={Show2}
               itemName="Nike Air Max Pulse"

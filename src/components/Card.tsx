@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 interface CardProps {
-  img: string;
+  img: any;
   itemName: string;
   pries: string;
   itemdisPries: string;
