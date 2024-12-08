@@ -105,7 +105,7 @@ const NikeMember = () => {
             </div>
 
             <p className="text-sm text-gray-500 mt-4">
-              By creating an account, you agree to Nike's{" "}
+              By creating an account, you agree to Nike
               <a href="#" className="text-blue-500">
                 Privacy Policy
               </a>{" "}

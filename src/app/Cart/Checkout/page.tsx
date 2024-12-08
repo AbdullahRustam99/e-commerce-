@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Button from "@/components/Button";
 import men1 from "@/img/men (1).png";
 import shoe from "@/img/show (1).png";
 import Image from "next/image";
@@ -20,7 +19,7 @@ const OrderForm = () => {
                 How would you like to get your order?
               </h1>
               <p className="text-[14px]">
-                Customs regulation for India require a copy of the recipient's
+                Customs regulation for India require a copy of the recipients
                 KYC. The address on the KYC needs to match the shipping address.
                 Our courier will contact you via SMS/email to obtain a copy of
                 your KYC. The KYC will be stored securely and used solely for
