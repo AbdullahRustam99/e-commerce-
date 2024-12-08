@@ -49,7 +49,7 @@ const Login = () => {
             </div>
 
             <p className="text-sm text-gray-500 mt-4">
-              By logging in, you agree to Nike's
+              By logging in, you agree to Nikes
               <a href="#" className="text-blue-500">
                 Privacy Policy
               </a>
