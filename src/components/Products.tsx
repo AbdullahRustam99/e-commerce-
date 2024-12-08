@@ -1,0 +1,66 @@
+import React from "react";
+import Card from "@/components/Card";
+import show1 from "@/img/show (1).png";
+import Show2 from "@/img/Shoe(2).png";
+import show3 from "@/img/show (3).png";
+import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
+
+const Products = () => {
+  return (
+    <>
+      <div className="max-w-[1440px] w-[100%] px-10 py-10">
+        <div>
+          <div className="flex gap-1 pb-3 w-full">
+            <div className="flex justify-between items-center w-full  ">
+              <p className="font-medium text-[22px]">Best of Air Max</p>
+            </div>
+            <div className="flex items-center justify-center gap-3   ">
+              <p className="font-medium"> Shop</p>
+              <div className="bg-[#E5E5E5] w-[48px] h-[48px] rounded-[300px] flex justify-center items-center">
+                <IoIosArrowBack size={25} />
+              </div>
+              <div className="bg-[#E5E5E5] w-[48px] h-[48px] rounded-[300px] flex justify-center items-center">
+                <IoIosArrowForward size={25} />
+              </div>
+            </div>
+          </div>
+          <div className="overflow-hidden  flex justify-start items-center lg:flex-nowrap md:flex-wrap gap-5 ">
+            <Card
+              img={Show2}
+              itemName="Nike Air Max Pulse"
+              pries="$1300"
+              itemPries="Men's Shoes"
+            />
+            <Card
+              img={show1}
+              itemName="Nike Air Max Pulse"
+              pries="$2400"
+              itemPries="Men's Shoes"
+            />
+            <Card
+              img={show3}
+              itemName="Nike Air Max Pulse"
+              pries="$5500"
+              itemPries="Men's Shoes"
+            />
+            <Card
+              img={show1}
+              itemName="Nike Air Max Pulse"
+              pries="$2400"
+              itemPries="Men's Shoes"
+            />
+            <Card
+              img={show1}
+              itemName="Nike Air Max Pulse"
+              pries="$2400"
+              itemPries="Men's Shoes"
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Products;
