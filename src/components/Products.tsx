@@ -5,6 +5,8 @@ import Show2 from "@/img/Shoe(2).png";
 import show3 from "@/img/show (3).png";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
+import Link from "next/link";
+
 
 const Products = () => {
   return (
@@ -26,36 +28,47 @@ const Products = () => {
             </div>
           </div>
           <div className="overflow-hidden  flex justify-start items-center  lg:flex-nowrap flex-wrap gap-5 ">
+            <Link href={"/All-Products/Products-Details"}>
             <Card
               img={Show2}
               itemName="Nike Air Max Pulse"
               pries="$1300"
               itemPries="Men's Shoes"
-            />
+              />
+            </Link>
+            
+            <Link href={"/All-Products/Products-Details"}>
             <Card
               img={show1}
               itemName="Nike Air Max Pulse"
               pries="$2400"
               itemPries="Men's Shoes"
-            />
+              />
+              </Link>
+            <Link href={"/All-Products/Products-Details"}>
             <Card
               img={show3}
               itemName="Nike Air Max Pulse"
               pries="$5500"
               itemPries="Men's Shoes"
-            />
+              />
+              </Link>
+              <Link href={"/All-Products/Products-Details"}>
             <Card
               img={show1}
               itemName="Nike Air Max Pulse"
               pries="$2400"
               itemPries="Men's Shoes"
-            />
+              />
+              </Link>
+              <Link href={"/All-Products/Products-Details"}>
             <Card
               img={show1}
               itemName="Nike Air Max Pulse"
               pries="$2400"
               itemPries="Men's Shoes"
-            />
+              />
+              </Link>
           </div>
         </div>
       </div>

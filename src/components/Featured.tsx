@@ -2,6 +2,8 @@ import React from "react";
 import Button from "@/components/Button";
 import Image from "next/image";
 import Banner from "@/img/fetaured.png";
+import Link from "next/link";
+
 const Featured = () => {
   return (
     <div>
@@ -23,7 +25,9 @@ const Featured = () => {
             pair.
           </p>
           <div className="flex justify-center lg:gap-10 ">
-            <Button text="Find Your Shoe" />
+            <Link href={"/All-Products"}>
+              <Button text="Find Your Shoes" />
+            </Link>
           </div>
         </div>
       </div>

@@ -2,6 +2,8 @@ import React from "react";
 import Button from "@/components/Button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer"
+import Link from "next/link";
+
 const NikeMember = () => {
   return (
 	  <>
@@ -120,10 +122,10 @@ const NikeMember = () => {
           </form>
 
           <p className="text-sm text-gray-500 mt-4">
-            Already a Member?{" "}
-            <a href="#" className="text-blue-500">
+            Already a Member?
+            <Link href={"/Singin"} className="text-blue-500">
               Sign In
-            </a>
+            </Link>
             
           </p>
         </div>

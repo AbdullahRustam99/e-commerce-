@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Banner from "@/img/Image.png";
 import Button from "@/components/Button";
-
+import Link from "next/link";
 
 const main = () => {
   return (
@@ -19,7 +19,9 @@ const main = () => {
         </div>
         <div className="w-full flex-col flex md:gap-8 gap-4 text-center px-10 justify-center items-center mb-4">
           <div>
-            <Image src={Banner} alt="banner" />
+            <Link href={"/All-Products"}>
+              <Image src={Banner} alt="banner" />
+            </Link>
           </div>
           <div className="flex flex-col justify-center gap-5 ">
             <div>
@@ -35,7 +37,9 @@ const main = () => {
             </p>
             <div className="flex justify-center lg:gap-10 ">
               <Button text="Notify Me" />
-              <Button text="Shop Air Max" />
+              <Link href={"/All-Products"}>
+                <Button text="Shop Air Max" />
+              </Link>
             </div>
           </div>
         </div>

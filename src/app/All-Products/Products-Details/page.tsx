@@ -5,6 +5,8 @@ import Image from "next/image";
 import produtimg from "@/img/Rectangle.png";
 import Button from "@/components/Button";
 import { BiCart } from "react-icons/bi";
+import Link from "next/link";
+
 const ProductDetails = () => {
   return (
     <>
@@ -30,7 +32,10 @@ const ProductDetails = () => {
           <p className="text-[36px] font-medium pb-3">$ 8 695.00</p>
           <div className="flex items-center bg-black rounded-[200px]  cursor-pointer text-white pl-3 w-44">
             <BiCart size={25} className="" />
+            <Link href={"/Cart"}>
+            
             <Button text="Add to Cart" />
+            </Link>
           </div>
         </div>
       </div>

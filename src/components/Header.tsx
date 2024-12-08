@@ -5,7 +5,7 @@ import { IoIosMenu } from "react-icons/io";
 import logo from "@/img/logo.png";
 import toplogo from "@/img/topheaderlogo.png";
 import Image from "next/image";
-
+import Link from "next/link"
 const Header = () => {
   return ( 
     <>
@@ -24,21 +24,27 @@ const Header = () => {
             <p className="flex items-center border-r-[1px] text-[11px] font-medium pr-4 border-black h-[14px]">
               Help
             </p>
+            <Link href={"/Join"}>
             <p className="flex items-center border-r-[1px] text-[11px] font-medium pr-4 border-black h-[14px]">
               Join Us
             </p>
+            </Link>
+            <Link href={"/Singin"}>
             <p className="flex items-center border-r-[1px] text-[11px] font-medium pr-4 border-black h-[14px]">
               Sign In
             </p>
+            </Link>
           </div>
         </div>
       </div>
       <header className="w-full  pt-[10px] pb-[10px]  max-w-[1440px]">
         <div className="flex justify-around items-center  lg:gap-10 2xl:gap-36">
           <nav className=" flex justify-between items-center  md:w-[50%] lg:gap-10 2xl:gap-28">
-            <h1 className="font-bold text-[24px] max-sm:hidden ">
+            <div className="font-bold text-[24px] max-sm:hidden ">
+              <Link href={"/"}>
               <Image src={logo} alt="logo" />
-            </h1>
+              </Link>
+            </div>
             <ul className=" flex justify-center items-center text-[16px] 2xl:gap-9 lg:gap-5 max-md:hidden max-lg:hidden">
               <li className="hover:border-b-2 cursor-pointer border-[#a5a5a5] ">
                 New Featured
@@ -62,14 +68,16 @@ const Header = () => {
           </nav>
 
           <Sheet>
-            <SheetTrigger className="  ">
+            <SheetTrigger className=" lg:hidden ">
               <IoIosMenu size={20} />
             </SheetTrigger>
             <SheetContent>
-              <ul className=" flex justify-center items-center text-[16px] gap-9 flex-col">
+              <ul className="bg-white flex justify-center items-center text-[16px]  gap-9 flex-col">
+                <Link href={"/"}>
                 <li className="hover:border-b-2 cursor-pointer border-[#a5a5a5] ">
                   New Featured
                 </li>
+                </Link>
                 <li className="hover:border-b-2 cursor-pointer border-[#a5a5a5] ">
                   Men
                 </li>
@@ -99,7 +107,9 @@ const Header = () => {
               />
             </div>
             <BiHeart size={24} className="cursor-pointer" />
+            <Link href={"/Cart"}>
             <BiShoppingBag size={24} className="cursor-pointer" />
+            </Link>
           </nav>
         </div>
       </header>

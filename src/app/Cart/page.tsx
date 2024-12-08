@@ -6,6 +6,8 @@ import men1 from "@/img/men (1).png";
 import men2 from "@/img/men (2).png";
 import { Heart, Trash } from "lucide-react";
 import Button from "@/components/Button";
+import Link from "next/link";
+
 const ShoppingCart = () => {
   return (
     <>
@@ -76,7 +78,9 @@ const ShoppingCart = () => {
               <p className="text-gray-500">Total</p>
               <p className="text-lg font-bold">₹10,690.00</p>
             </div>
+            <Link href={"/Cart/Checkout"}>
             <Button text=" Member Checkout" />
+            </Link>
           </div>
         </div>
       </div>
