@@ -3,10 +3,10 @@ import React from "react";
 import { StaticImageData } from "next/image";
 interface CardProps {
   img: StaticImageData;
-  itemName: string;
-  pries: string;
-  itemdisPries: string;
-  itemPries: string;
+  itemName?: string;
+  pries?: string;
+  itemdisPries?: string;
+  itemPries?: string;
   discount?: string; // Optional prop
   color?: string; // Optional prop for discount styling
   icon1?: JSX.Element; // Assuming the icons are React components
