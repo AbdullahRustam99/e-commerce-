@@ -2,14 +2,17 @@ import React from "react";
 import Button from "@/components/Button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer"
+import Logo from "@/img/logo.png";
+import Image from "next/image";
 import Link from "next/link";
 
 const NikeMember = () => {
   return (
-	  <>
-		  <Header/>
-      <div className="md:px-[200px] lg:px-[200px] px-[50px] my-5">
-        <div className="px10 flex justify-center items-center flex-col text-center gap-3">
+    <>
+      <Header />
+      <div className="flex justify-center items-center">
+        <div className="px10 flex justify-center items-center flex-col text-center gap-2 md:max-w-[380px] px-5 my-5">
+          <Image src={Logo } alt="logo"/>
           <h2 className="text-3xl font-bold mb-6">Become a Nike Member</h2>
 
           <p className="text-lg mb-4">
@@ -77,8 +80,8 @@ const NikeMember = () => {
                     type="radio"
                     name="gender"
                     value="male"
-									  className="form-radio"
-									  placeholder="Male"
+                    className="form-radio"
+                    placeholder="Male"
                   />
                   <span className="ml-2">Male</span>
                 </label>
@@ -126,11 +129,10 @@ const NikeMember = () => {
             <Link href={"/Singin"} className="text-blue-500">
               Sign In
             </Link>
-            
           </p>
         </div>
-		  </div>
-		  <Footer/>
+      </div>
+      <Footer />
     </>
   );
 };

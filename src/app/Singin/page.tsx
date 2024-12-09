@@ -10,8 +10,8 @@ const Login = () => {
   return (
     <>
       <Header />
-      <div className="md:px-[200px] lg:px-[200px] px-[50px] my-5">
-        <div className="px10 flex justify-center items-center flex-col text-center gap-3">
+      <div className="flex justify-center items-center my-7">
+        <div className="px10 flex justify-center items-center flex-col text-center gap-2 px-5 md:max-w-[380px]  my-5">
           <Image src={Logo} alt="logo"></Image>
           <h2 className="text-3xl font-bold mb-6">
             Your Account For Everything Nike

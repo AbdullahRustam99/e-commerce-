@@ -11,7 +11,7 @@ import Link from "next/link";
 const Products = () => {
   return (
     <>
-      <div className="max-w-[1440px] w-[100%] px-10 py-10">
+      <div className=" w-[100%] px-10 py-10">
         <div>
           <div className="flex gap-1 pb-3 w-full">
             <div className="flex justify-between items-center w-full  ">
@@ -27,7 +27,7 @@ const Products = () => {
               </div>
             </div>
           </div>
-          <div className="overflow-hidden  flex justify-start items-center  lg:flex-nowrap flex-wrap gap-5 ">
+          <div className="overflow-hidden  flex justify-center md:justify-start items-center  lg:flex-nowrap flex-wrap gap-5 ">
             <Link href={"/All-Products/Products-Details"}>
             <Card
               img={Show2}

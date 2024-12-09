@@ -15,10 +15,10 @@ import img8 from "@/img/ProductPageImg/Rectangle (8).png";
 import img9 from "@/img/ProductPageImg/Rectangle (9).png";
 import img10 from "@/img/ProductPageImg/Rectangle (10).png";
 import img11 from "@/img/ProductPageImg/Rectangle (11).png";
-import img12 from "@/img/ProductPageImg/Rectangle (12).png";
-import img13 from "@/img/ProductPageImg/Rectangle (13).png";
+import img12 from "@/img/ProductPageImg/Rectangle (20).png";
+import img13 from "@/img/ProductPageImg/Rectangle (19).png";
 import img14 from "@/img/ProductPageImg/Rectangle (14).png";
-import img15 from "@/img/ProductPageImg/Rectangle (15).png";
+import img15 from "@/img/ProductPageImg/Rectangle (21).png";
 import img16 from "@/img/ProductPageImg/Rectangle (16).png";
 import img17 from "@/img/ProductPageImg/Rectangle (17).png";
 import img18 from "@/img/ProductPageImg/Rectangle (18).png";
@@ -29,9 +29,9 @@ const ProductDetails = () => {
   return (
     <>
       <Header />
-      <div className="flex justify-between px-10 pt-10 pb-5">
+      <div className="flex justify-between px-5 md:px-10 pt-10 pb-5">
         <div>New (500)</div>
-        <div className="flex gap-10">
+        <div className="flex gap-2 md:gap-10">
           <div className="flex justify-center items-center gap-1">
             Hidden{" "}
             <span>
@@ -127,7 +127,7 @@ const ProductDetails = () => {
             <div>
               <Image src={img1} alt="Product Img" />
               <h3 className="text-xl font-semibold mb-2">
-                Nike Air Force 1 Mid 07
+                Nike Court Vision Low Next Nature
               </h3>
               <p className="text-gray-500 mb-4">Mens Shoes</p>
               <p className="text-gray-500">1 Colour</p>
@@ -147,9 +147,9 @@ const ProductDetails = () => {
             <div>
               <Image src={img3} alt="Product Img" />
               <h3 className="text-xl font-semibold mb-2">
-                Nike Air Force 1 PLT.AF.ORM
+                Nike Air Force 1 Mid 07
               </h3>
-              <p className="text-gray-500 mb-4">Womens Shoes</p>
+              <p className="text-gray-500 mb-4">Mens Shoes</p>
               <p className="text-gray-500">1 Colour</p>
               <p className="text-lg font-bold">$8,695.00</p>
             </div>
@@ -227,25 +227,25 @@ const ProductDetails = () => {
               </h3>
               <p className="text-gray-500 mb-4">Womens Shoes</p>
               <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$8,695.00</p>
+              <p className="text-lg font-bold">$6,695.00</p>
             </div>
             <div>
               <Image src={img12} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Air Force 1 PLT.AF.ORM
-              </h3>
-              <p className="text-gray-500 mb-4">Womens Shoes</p>
+              <h3 className="text-xl font-semibold mb-2">Nike Swoosh</h3>
+              <p className="text-gray-500 mb-4">
+                Womens Medium-support Padded Sports Bra Tank
+              </p>
               <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$8,695.00</p>
+              <p className="text-lg font-bold">$3,695.00</p>
             </div>
             <div>
               <Image src={img13} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Air Force 1 PLT.AF.ORM
-              </h3>
-              <p className="text-gray-500 mb-4">Womens Shoes</p>
+              <h3 className="text-xl font-semibold mb-2">Nike Outdoor Play</h3>
+              <p className="text-gray-500 mb-4">
+                Older Kids Oversized Woven Jacket
+              </p>
               <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$8,695.00</p>
+              <p className="text-lg font-bold">$2,765.00</p>
             </div>
             <div>
               <Image src={img14} alt="Product Img" />
@@ -254,16 +254,14 @@ const ProductDetails = () => {
               </h3>
               <p className="text-gray-500 mb-4">Womens Shoes</p>
               <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$8,695.00</p>
+              <p className="text-lg font-bold">$3,245.00</p>
             </div>
             <div>
               <Image src={img15} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Air Force 1 PLT.AF.ORM
-              </h3>
-              <p className="text-gray-500 mb-4">Womens Shoes</p>
+              <h3 className="text-xl font-semibold mb-2">Nike SB Force 58</h3>
+              <p className="text-gray-500 mb-4">Skate Shoe </p>
               <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$8,695.00</p>
+              <p className="text-lg font-bold">$4,210.00</p>
             </div>
             <div>
               <Image src={img16} alt="Product Img" />
