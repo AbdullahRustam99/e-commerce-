@@ -11,7 +11,7 @@ import Link from "next/link";
 const Products = () => {
   return (
     <>
-      <div className=" w-[100%] px-10 py-10">
+      <div className="max-w-[1440px] w-[100%] px-10 py-10">
         <div>
           <div className="flex gap-1 pb-3 w-full">
             <div className="flex justify-between items-center w-full  ">

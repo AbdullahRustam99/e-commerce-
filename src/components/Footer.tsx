@@ -12,7 +12,7 @@ import {
 const footer = () => {
   return (
     <>
-      <div className="w-full bg-black text-white ">
+      <div className="w-full bg-black text-white max-w-[1440px]">
         <div className=" px-20 py-20 justify-between gap-20 flex flex-col  lg:flex-row ">
           <div className=" flex justify-between flex-col  lg:w-[50%] md:flex-row w-full md:items-center">
             <ul className=" font-medium text-[12px] pb-7 flex flex-col gap-3 ">

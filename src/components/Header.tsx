@@ -9,7 +9,7 @@ import Link from "next/link"
 const Header = () => {
   return (
     <>
-      <div className="w-full p-2 text-center text-[14px] text-black bg-[#F5F5F5] ">
+      <div className="w-full p-2 text-center text-[14px] text-black bg-[#F5F5F5] max-w-[1440px]">
         <div className="flex flex-col md:flex-row lg:items-center lg:justify-center lg:gap-32 w-full">
           <div className="flex justify-evenly lg:justify-between w-full ">
             <div className="lg:ml-24">
@@ -39,7 +39,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <header className="w-full  pt-[10px] pb-[10px] ">
+      <header className="w-full  pt-[10px] pb-[10px]  max-w-[1440px]">
         <div className="flex justify-around items-center  lg:gap-10 2xl:gap-36">
           <nav className=" flex justify-between items-center  md:w-[50%] lg:gap-10 2xl:gap-28">
             <div className="font-bold text-[24px]  ">
