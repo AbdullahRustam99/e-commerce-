@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Essiental = () => {
   return (
-    <div className=" px-10 my-20 ">
+    <div className=" px-10 my-20 max-w-[1440px]">
       <h2 className="text-[23px] font-medium mb-6">The Essentials</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="text-center">
@@ -35,7 +35,7 @@ const Essiental = () => {
       
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center mt-10">
           <div className="flex flex-col gap-2">
-            <p className="text-[15px] font-semibold">Icons</p>
+            <p className="text-[15px] font-medium">Icons</p>
             <ul className="flex flex-col gap-2 ">
               <li>Air Force 1</li>
               <li>Huarache</li>
@@ -44,7 +44,7 @@ const Essiental = () => {
             </ul>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="text-[15px] font-semibold">Shoes</p>
+            <p className="text-[15px] font-medium">Shoes</p>
             <ul className="flex flex-col gap-2 ">
               <li>All Shoes</li>
               <li>Custom Shoes</li>
@@ -62,7 +62,7 @@ const Essiental = () => {
             </ul>
           </div>
           <div className="flex flex-col  gap-2">
-            <p className="text-[15px] font-semibold">Kids</p>
+            <p className="text-[15px] font-medium">Kids</p>
             <ul className="flex flex-col gap-2 ">
               <li>Infant & Toddler Shoes</li>
               <li>Kids Shoes</li>
