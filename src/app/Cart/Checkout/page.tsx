@@ -1,24 +1,27 @@
 import React from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/CheckoutHeader";
+import Footer from "@/components/CheckoutFooter";
 import men1 from "@/img/men (1).png";
 import shoe from "@/img/show (1).png";
 import Image from "next/image";
+import Button from "@/components/Button";
+
+import { PiPackage } from "react-icons/pi";
 
 const OrderForm = () => {
   return (
     <>
       <Header />
-      <div className="px-10 mb-20">
+      <div className="px-10 mb-20 max-w-[1440px]">
         <h2 className="text-3xl font-bold mb-6">Place Your Order</h2>
 
-        <div className="grid grid-cols-1 justify-between lg:grid-cols-2">
+        <div className="grid grid-cols-1 justify-items-center gap-2 justify-between lg:grid-cols-2">
           <div className="2xl:w-[500px] lg:w-[340px] w-[320px]">
             <div>
-              <h1 className="text-[52] font-bold">
+              <h1 className="text-[52] font-bold md-4">
                 How would you like to get your order?
               </h1>
-              <p className="text-[14px]">
+              <p className="text-[14px] mb-3">
                 Customs regulation for India require a copy of the recipients
                 KYC. The address on the KYC needs to match the shipping address.
                 Our courier will contact you via SMS/email to obtain a copy of
@@ -30,150 +33,135 @@ const OrderForm = () => {
               </p>
             </div>
 
-            <form className=" mb-5">
-             
-              <div>
-                <label className="block text-sm font-medium text-gray-700">
-                  How would you like to get your order?
-                </label>
-                <select className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
-                  <option>Delivery</option>
-                  <option>Pickup</option>
-                </select>
+            <form className="flex flex-col gap-5 mb-5 max-w-[295px] md:max-w-[440px]">
+              <div className="flex  items-center border-2 border-black p-5 gap-4 rounded-xl">
+                <PiPackage size={25} />{" "}
+                <p className="text-[16px] font-medium ">Deliver It</p>
               </div>
 
-              
+              <h1 className="font-medium text-[17px]">
+                Enter your name and address:
+              </h1>
               <div>
-                <label
-                  htmlFor="firstName"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  First Name
-                </label>
                 <input
+                  placeholder="First Name"
                   type="text"
-                  id="firstName"
-                  name="firstName"
-                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                  className=" w-full border border-gray-300 rounded-md shadow-sm p-2"
                 />
               </div>
               <div>
-                <label
-                  htmlFor="lastName"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Last Name
-                </label>
                 <input
                   type="text"
-                  id="lastName"
-                  name="lastName"
-                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
-                />
-              </div>
-
-             
-              <div>
-                <label
-                  htmlFor="address1"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Address Line 1
-                </label>
-                <input
-                  type="text"
-                  id="address1"
-                  name="address1"
-                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="address2"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Address Line 2
-                </label>
-                <input
-                  type="text"
-                  id="address2"
-                  name="address2"
-                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="postalCode"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Postal Code
-                </label>
-                <input
-                  type="text"
-                  id="postalCode"
-                  name="postalCode"
-                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="locality"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Locality
-                </label>
-                <input
-                  type="text"
-                  id="locality"
-                  name="locality"
-                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                  placeholder="Last Name"
+                  className=" w-full border border-gray-300 rounded-md shadow-sm p-2"
                 />
               </div>
 
               <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="phone"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Phone Number
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="pan"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  PAN
-                </label>
                 <input
                   type="text"
-                  id="pan"
-                  name="pan"
-                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"
+                  placeholder="Address1"
+                  className=" w-full border border-gray-300 rounded-md shadow-sm p-2"
                 />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Address2"
+                  className=" w-full border border-gray-300 rounded-md shadow-sm p-2"
+                />
+              </div>
+              <div className="flex justify-between">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Postal Code"
+                    className=" w-[85%] border border-gray-300 rounded-md shadow-sm p-2"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Locality"
+                    className=" w-full border border-gray-300 rounded-md shadow-sm p-2"
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-3">
+                <h1 className="font-medium text-[16px]">
+                  Whats your contact information?
+                </h1>
+                <div>
+                  <input
+                    type="email"
+                    placeholder="E-mail"
+                    className=" w-full border border-gray-300 rounded-md shadow-sm p-2"
+                  />
+                  <p className="text-[11px] ml-2 mt-1 text-[#757575]">
+                    A confirmation email will be sent after checkout.
+                  </p>
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    placeholder="Phone"
+                    className=" w-full border border-gray-300 rounded-md shadow-sm p-2"
+                  />
+                  <p className="text-[11px] ml-2 mt-1 text-[#757575]">
+                    A carrier might contact you to confirm delivery.
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-3">
+                <h1 className="font-medium text-[16px]">What's your PAN?</h1>
+
+                <div>
+                  <input
+                    type="text"
+                    placeholder="PAN"
+                    className=" w-full border border-gray-300 rounded-md shadow-sm p-2"
+                  />
+                </div>
+                <p className="text-[11px] ml-2 mt-1 text-[#757575]">
+                  Enter your PAN to enable payment with UPI, Net Banking or
+                  local card methods
+                </p>
+                <div className="flex justify-start gap-2">
+                  <input
+                    type="checkbox"
+                    placeholder="Phone"
+                    className="  border border-gray-300 rounded-md shadow-sm p-2"
+                  />
+                  <p className="text-[11px] ml-2 mt-1 text-[#757575]">
+                    Save PAN details to Nike Profile
+                  </p>
+                </div>
+                <div className="flex justify-start gap-2">
+                  <input
+                    type="checkbox"
+                    placeholder="Phone"
+                    className="  border border-gray-300 rounded-md shadow-sm p-2"
+                  />
+                  <p className="text-[11px] ml-2 mt-1 text-[#757575]">
+                    I have read and consent to eShopWorld processing my
+                    information in accordance with the{" "}
+                    <span className="underline">Privacy Statement</span> and
+                    <span className="underline">Cookie Policy</span>. eShopWorld
+                    is a trusted Nike partner.
+                  </p>
+                </div>
               </div>
             </form>
+            <div>
+              <Button text="Oder Now" />
+            </div>
+            <div className="flex flex-col gap-3">
+              <div className="border-t-2 py-1 my-2 text-[20px] " >Delivery</div>
+              <div className="border-t-2 py-1 my-2 text-[20px] text-[#757575]" >Shipping</div>
+              <div className="border-t-2 py-1 my-2 text-[20px] text-[#757575]" >Billing</div>
+              <div className="border-t-2 py-1 my-2 text-[20px] text-[#757575]" >Payment</div>
+            </div>
           </div>
           <div>
             <div className="lg:w-[344px] w-full">

@@ -12,7 +12,7 @@ const ShoppingCart = () => {
   return (
     <>
       <Header />
-      <div className=" bg-white p-8">
+      <div className=" bg-white p-8 max-w-[1440px]" >
         <h2 className="text-3xl font-bold mb-6">Bag</h2>
 
         <div className="flex justify-evenly flex-col lg:flex-row">
