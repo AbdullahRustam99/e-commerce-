@@ -114,7 +114,7 @@ const OrderForm = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-3">
-                <h1 className="font-medium text-[16px]">What's your PAN?</h1>
+                <h1 className="font-medium text-[16px]">Whats your PAN?</h1>
 
                 <div>
                   <input
