@@ -23,9 +23,11 @@ const Header = () => {
               Find a Store
             </p>
             </Link>
+            <Link href={"/Contact-us"}>
             <p className="flex items-center border-r-[1px] text-[11px] font-medium pr-4 border-black h-[14px]">
               Help
             </p>
+            </Link>
             <Link href={"/Join"}>
               <p className="flex items-center border-r-[1px] text-[11px] font-medium pr-4 border-black h-[14px]">
                 Join Us

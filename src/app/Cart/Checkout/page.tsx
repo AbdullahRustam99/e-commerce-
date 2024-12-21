@@ -35,7 +35,7 @@ const OrderForm = () => {
 
             <form className="flex flex-col gap-5 mb-5 max-w-[295px] md:max-w-[440px]">
               <div className="flex  items-center border-2 border-black p-5 gap-4 rounded-xl">
-                <PiPackage size={25} />{" "}
+                <PiPackage size={25} />
                 <p className="text-[16px] font-medium ">Deliver It</p>
               </div>
 
