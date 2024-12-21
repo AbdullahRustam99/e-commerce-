@@ -43,7 +43,7 @@ const NikeMember = () => {
                 Electron, Maestro
               </p>
               <p className="text-[16px] font-normal">
-                If you enter your PAN information at checkout, you'll be able to
+                If you enter your PAN information at checkout, youll be able to
                 pay for your order with PayTM or a local credit or debit card.
               </p>
               <p className="text-[16px] font-normal">Apple Pay</p>
@@ -51,7 +51,7 @@ const NikeMember = () => {
             <p className="text-[16px] font-normal mb-2">
               <span className="underline font-medium"> Nike Members</span> can
               store multiple debit or credit cards in their profile for faster
-              checkout. If you're not already a Member,{" "}
+              checkout. If youre not already a Member,{" "}
               <span className="underline font-medium">join us today</span>.
             </p>
             <div className="flex gap-4">
@@ -89,7 +89,7 @@ const NikeMember = () => {
               </h1>
               <p className="text-[16px] font-normal">
                 Can I pay for my order with multiple methods? No, payment for
-                Nike orders can't be split between multiple payment methods.
+                Nike orders cant be split between multiple payment methods.
               </p>
             </div>
             <div className="my-4">
@@ -103,13 +103,13 @@ const NikeMember = () => {
             </div>
             <div className="my-4">
               <h1 className="text-[16px] font-medium ">
-                Why don't I see Apple Pay as an option?
+                Why dont I see Apple Pay as an option?
               </h1>
               <p className="text-[16px] font-normal">
                 To see Apple Pay as an option in the Nike App or on Nike.com,
-                you'll need to use a compatible Apple device running the latest
+                youll need to use a compatible Apple device running the latest
                 OS, be signed in to your iCloud account and have a supported
-                card in your Wallet. Additionally, you'll need to use Safari to
+                card in your Wallet. Additionally, youll need to use Safari to
                 use Apple Pay on Nike.com.
               </p>
             </div>
@@ -126,7 +126,7 @@ const NikeMember = () => {
               </h1>
               <div className="ml-5">
                 <h1 className="text-[16px] underline font-medium ">
-                  WHAT ARE NIKE'S DELIVERY OPTIONS?
+                  WHAT ARE NIKES DELIVERY OPTIONS?
                 </h1>
                 <h1 className="text-[16px] underline font-medium ">
                   HOW DO I GET FREE DELIVERY ON NIKE ORDERS?
