@@ -1,31 +1,47 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
+import { client } from "@/sanity/lib/client";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { FaChevronUp } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
 import { HiMiniBars3CenterLeft } from "react-icons/hi2";
-import img1 from "@/img/ProductPageImg/Rectangle (1).png";
-import img2 from "@/img/ProductPageImg/Rectangle (2).png";
-import img3 from "@/img/ProductPageImg/Rectangle (3).png";
-import img4 from "@/img/ProductPageImg/Rectangle (4).png";
-import img5 from "@/img/ProductPageImg/Rectangle (5).png";
-import img6 from "@/img/ProductPageImg/Rectangle (6).png";
-import img7 from "@/img/ProductPageImg/Rectangle (7).png";
-import img8 from "@/img/ProductPageImg/Rectangle (8).png";
-import img9 from "@/img/ProductPageImg/Rectangle (9).png";
-import img10 from "@/img/ProductPageImg/Rectangle (10).png";
-import img11 from "@/img/ProductPageImg/Rectangle (11).png";
-import img12 from "@/img/ProductPageImg/Rectangle (20).png";
-import img13 from "@/img/ProductPageImg/Rectangle (19).png";
-import img14 from "@/img/ProductPageImg/Rectangle (14).png";
-import img15 from "@/img/ProductPageImg/Rectangle (21).png";
-import img16 from "@/img/ProductPageImg/Rectangle (16).png";
-import img17 from "@/img/ProductPageImg/Rectangle (17).png";
-import img18 from "@/img/ProductPageImg/Rectangle (18).png";
+import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
-
-
+import Link from "next/link";
+interface Product {
+  _id: string;
+  productName: string;
+  category: string;
+  price: number;
+  inventory: number;
+  colors: string[];
+  status: string;
+  imageUrl: string;
+  description: string;
+}
 const ProductDetails = () => {
+  const api = `*[_type == "product"]{
+  _id,
+  productName,
+  category,
+  price,
+  inventory,
+  colors,
+  status,
+  "imageUrl": image.asset->url,
+  description
+}`;
+  const [productData, setProductData] = useState<Product[]>([]);
+  useEffect(() => {
+    async function fetchData() {
+      const product = await client.fetch(api);
+      console.log(product);
+      setProductData(product);
+    }
+    fetchData();
+  });
+
   return (
     <>
       <Header />
@@ -124,170 +140,29 @@ const ProductDetails = () => {
         </div>
         <div className="col-span-4 md:col-span-3 ">
           <div className="grid grid-cols-1 justify-items-center md:grid-cols-3 gap-6">
-            <div>
-              <Image src={img1} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Court Vision Low Next Nature
-              </h3>
-              <p className="text-gray-500 mb-4">Mens Shoes</p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$10,795.00</p>
-            </div>
-
-            <div>
-              <Image src={img4} alt="Product ImgNature" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Standard Issue
-              </h3>
-              <p className="text-gray-500 mb-4">Womens Basketball Jersey</p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold"> $ 2 895.00</p>
-            </div>
-
-            <div>
-              <Image src={img3} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Air Force 1 Mid 07
-              </h3>
-              <p className="text-gray-500 mb-4">Mens Shoes</p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$8,695.00</p>
-            </div>
-            <div>
-              <Image src={img2} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Air Force 1 PLT.AF.ORM
-              </h3>
-              <p className="text-gray-500 mb-4">Womens Shoes</p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$8,695.00</p>
-            </div>
-            <div>
-              <Image src={img6} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Dri-FIT UV Hyverse
-              </h3>
-              <p className="text-gray-500 mb-4">
-                Mens Short-Sleeve Graphic Fitness Top
-              </p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$2,695.00</p>
-            </div>
-            <div>
-              <Image src={img5} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Dunk Low Retro SE
-              </h3>
-              <p className="text-gray-500 mb-4">Mens Shoes</p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$1,695.00</p>
-            </div>
-            <div>
-              <Image src={img7} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Air Force 1 PLT.AF.ORM
-              </h3>
-              <p className="text-gray-500 mb-4">Womens Shoes</p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$8,695.00</p>
-            </div>
-            <div>
-              <Image src={img8} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">Nike Dri-FIT Ready</h3>
-              <p className="text-gray-500 mb-4">
-                Mens Short-Sleeve Fitness Top
-              </p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$1,445.00</p>
-            </div>
-            <div>
-              <Image src={img9} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike One Leak Protection: Period
-              </h3>
-              <p className="text-gray-500 mb-4">
-                Womens Mid-Rise 18cm (approx.) Biker Shorts
-              </p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$4,695.00</p>
-            </div>
-            <div>
-              <Image src={img10} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Air Force 1 LV8 3
-              </h3>
-              <p className="text-gray-500 mb-4">Older Kids Shoe</p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$3,035.00</p>
-            </div>
-            <div>
-              <Image src={img11} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Air Force 1 PLT.AF.ORM
-              </h3>
-              <p className="text-gray-500 mb-4">Womens Shoes</p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$6,695.00</p>
-            </div>
-            <div>
-              <Image src={img12} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">Nike Swoosh</h3>
-              <p className="text-gray-500 mb-4">
-                Womens Medium-support Padded Sports Bra Tank
-              </p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$3,695.00</p>
-            </div>
-            <div>
-              <Image src={img13} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">Nike Outdoor Play</h3>
-              <p className="text-gray-500 mb-4">
-                Older Kids Oversized Woven Jacket
-              </p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$2,765.00</p>
-            </div>
-            <div>
-              <Image src={img14} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Air Force 1 PLT.AF.ORM
-              </h3>
-              <p className="text-gray-500 mb-4">Womens Shoes</p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$3,245.00</p>
-            </div>
-            <div>
-              <Image src={img15} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">Nike SB Force 58</h3>
-              <p className="text-gray-500 mb-4">Skate Shoe </p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$4,210.00</p>
-            </div>
-            <div>
-              <Image src={img16} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Air Force 1 PLT.AF.ORM
-              </h3>
-              <p className="text-gray-500 mb-4">Womens Shoes</p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$8,695.00</p>
-            </div>
-            <div>
-              <Image src={img17} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">Nike Air Max SYSTM</h3>
-              <p className="text-gray-500 mb-4">Older Kids Shoes</p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$8,695.00</p>
-            </div>
-            <div>
-              <Image src={img18} alt="Product Img" />
-              <h3 className="text-xl font-semibold mb-2">
-                Nike Dri-FIT Run Division Rise 365
-              </h3>
-              <p className="text-gray-500 mb-4">Mens Running Tank</p>
-              <p className="text-gray-500">1 Colour</p>
-              <p className="text-lg font-bold">$18,695.00</p>
-            </div>
+            {productData.map((product) => {
+              return (
+                <div key={product._id}>
+                  <Link href={`/All-Products/${product._id}`}>
+                    <Image
+                      src={urlFor(product.imageUrl).url()}
+                      alt="Product Img"
+                      width={250}
+                      height={250}
+                    />
+                    <h3 className="text-xl font-semibold mb-2 w-[200px]">
+                      {product.productName}
+                    </h3>
+                    <p className="flex justify-between  text-gray-500 mb-4 w-[200px]">
+                      {product.category}
+                      <p className="text-gray-500">{product.inventory}</p>
+                    </p>
+                    <p className="text-gray-500">{product.colors}</p>
+                    <p className="text-lg font-bold">$ {product.price}</p>
+                  </Link>
+                </div>
+              );
+            })}
           </div>
           <div className="border-t-2 mt-10 pt-5 mb-20">
             <h1 className="font-medium text-[22px]">Related Categories</h1>

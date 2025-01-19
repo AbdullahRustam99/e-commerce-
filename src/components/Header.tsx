@@ -19,14 +19,14 @@ const Header = () => {
           </div>
           <div className="flex gap-5 w-full lg:w-[50%] justify-center">
             <Link href={"/All-Products"}>
-            <p className="flex items-center border-r-[1px] text-[11px] font-medium pr-4 border-black h-[14px]">
-              Find a Store
-            </p>
+              <p className="flex items-center border-r-[1px] text-[11px] font-medium pr-4 border-black h-[14px]">
+                Find a Store
+              </p>
             </Link>
             <Link href={"/Contact-us"}>
-            <p className="flex items-center border-r-[1px] text-[11px] font-medium pr-4 border-black h-[14px]">
-              Help
-            </p>
+              <p className="flex items-center border-r-[1px] text-[11px] font-medium pr-4 border-black h-[14px]">
+                Help
+              </p>
             </Link>
             <Link href={"/Join"}>
               <p className="flex items-center border-r-[1px] text-[11px] font-medium pr-4 border-black h-[14px]">
@@ -50,24 +50,36 @@ const Header = () => {
               </Link>
             </div>
             <ul className=" flex justify-center items-center text-[16px] 2xl:gap-9 lg:gap-5 max-md:hidden max-lg:hidden">
+              <Link href={"/"}>
+                <li className="hover:border-b-2 cursor-pointer border-[#a5a5a5] ">
+                  Home
+                </li>
+              </Link>
+              <Link href={"/All-Products"}>
+                <li className="hover:border-b-2 cursor-pointer border-[#a5a5a5] ">
+                  Products
+                </li>
+              </Link>
+              <Link href={"/#"}>
               <li className="hover:border-b-2 cursor-pointer border-[#a5a5a5] ">
-                New Featured
+                About
               </li>
+              </Link>
+              <Link href={"/Contact-us"}>
               <li className="hover:border-b-2 cursor-pointer border-[#a5a5a5] ">
-                Men
+                Contact-US
               </li>
+              </Link>
+              <Link href={"/Join"}>
               <li className="hover:border-b-2 cursor-pointer border-[#a5a5a5] ">
-                Women
+                Singup
               </li>
+              </Link>
+              <Link href={"/Singin"}>
               <li className="hover:border-b-2 cursor-pointer border-[#a5a5a5] ">
-                Kids
+                Singin
               </li>
-              <li className="hover:border-b-2 cursor-pointer border-[#a5a5a5] ">
-                Sale
-              </li>
-              <li className="hover:border-b-2 cursor-pointer border-[#a5a5a5] ">
-                SNKRS
-              </li>
+              </Link>
             </ul>
           </nav>
 

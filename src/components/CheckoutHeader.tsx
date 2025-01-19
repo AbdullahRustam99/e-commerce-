@@ -5,6 +5,7 @@ import logo from "@/img/logo.png"
 import { IoBagOutline } from "react-icons/io5";
 import { BiCommentDetail } from "react-icons/bi";
 
+
 const CheckoutHeader = () => {
   return (
     <>

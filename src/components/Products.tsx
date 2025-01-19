@@ -7,13 +7,12 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 import Link from "next/link";
 
-
 const Products = () => {
   return (
     <>
       <div className="max-w-[1440px] w-[100%] px-10 py-10">
         <div>
-          <div className="flex gap-1 pb-3 w-full">
+          <div className="flex flex-row gap-1 pb-3 w-full">
             <div className="flex justify-between items-center w-full  ">
               <p className="font-medium text-[22px]">Best of Air Max</p>
             </div>
@@ -27,49 +26,49 @@ const Products = () => {
               </div>
             </div>
           </div>
-          <div className="overflow-hidden  flex justify-center md:justify-start items-center  lg:flex-nowrap flex-wrap gap-5 ">
+            <div className="md:overflow-x-scroll flex justify-center lg:justify-start items-center lg:flex-nowrap flex-wrap gap-5  scrollbar-none">
             <Link href={"/All-Products/Products-Details"}>
-            <Card
+              <Card
               img={Show2}
               itemName="Nike Air Max Pulse"
               pries="$1300"
               itemPries="Men's Shoes"
               />
             </Link>
-            
+
             <Link href={"/All-Products/Products-Details"}>
-            <Card
+              <Card
               img={show1}
               itemName="Nike Air Max Pulse"
               pries="$2400"
               itemPries="Men's Shoes"
               />
-              </Link>
+            </Link>
             <Link href={"/All-Products/Products-Details"}>
-            <Card
+              <Card
               img={show3}
               itemName="Nike Air Max Pulse"
               pries="$5500"
               itemPries="Men's Shoes"
               />
-              </Link>
-              <Link href={"/All-Products/Products-Details"}>
-            <Card
+            </Link>
+            <Link href={"/All-Products/Products-Details"}>
+              <Card
               img={show1}
               itemName="Nike Air Max Pulse"
               pries="$2400"
               itemPries="Men's Shoes"
               />
-              </Link>
-              <Link href={"/All-Products/Products-Details"}>
-            <Card
+            </Link>
+            <Link href={"/All-Products/Products-Details"}>
+              <Card
               img={show1}
               itemName="Nike Air Max Pulse"
               pries="$2400"
               itemPries="Men's Shoes"
               />
-              </Link>
-          </div>
+            </Link>
+            </div>
         </div>
       </div>
     </>

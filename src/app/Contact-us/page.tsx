@@ -16,7 +16,6 @@ const NikeMember = () => {
   return (
     <>
       <Header />
-
       <div className="px-10 flex justify-center items-center flex-col text-center gap-2 my-5">
         <h2 className="uppercase text-[32px] font-bold">GET HELP</h2>
         <div className="flex items-center justify-between border-[1px]  border-[#757575] py-3 px-5 gap-4 rounded-xl">
@@ -166,7 +165,6 @@ const NikeMember = () => {
           </div>
         </div>
       </div>
-
       <Footer />
     </>
   );

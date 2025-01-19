@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+import React, { useState, useEffect } from "react";
+import { useCart } from "@/app/cartContext/createContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -7,12 +9,30 @@ import men2 from "@/img/men (2).png";
 import { Heart, Trash } from "lucide-react";
 import Button from "@/components/Button";
 import Link from "next/link";
+type CartItem = {
+  id: number;
+  title: string;
+  price: number;
+  quantity: number;
+  image: string;
+};
 
 const ShoppingCart = () => {
+  const { cart, removeFromCart } = useCart();
+  const [sum, setSum] = useState(0);
+
+  useEffect(() => {
+    const total = cart.reduce(
+      (acc: number, item: { price: number; quantity: number }) =>
+        Math.round(acc + item.price * item.quantity),
+      0
+    );
+    setSum(total);
+  }, [cart]);
   return (
     <>
       <Header />
-      <div className=" bg-white p-8 max-w-[1440px]" >
+      <div className=" bg-white p-8 max-w-[1440px]">
         <h2 className="text-3xl font-bold mb-6">Bag</h2>
 
         <div className="flex justify-evenly flex-col lg:flex-row">
@@ -79,7 +99,7 @@ const ShoppingCart = () => {
               <p className="text-lg font-bold">₹10,690.00</p>
             </div>
             <Link href={"/Cart/Checkout"}>
-            <Button text=" Member Checkout" />
+              <Button text=" Member Checkout" />
             </Link>
           </div>
         </div>
