@@ -22,7 +22,7 @@ interface Product {
 }
 const ProductDetails = ({ params }: { params: { id: string } }) => {
   const { id } = params;
-  let { addToCart } = useCart();
+  const { addToCart } = useCart();
   const api = `*[_type == "product"]{
   _id,
   productName,

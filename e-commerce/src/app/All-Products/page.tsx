@@ -21,7 +21,7 @@ interface Product {
   description: string;
 }
 const ProductDetails = () => {
-  let { search } = useSearch();
+  const { search } = useSearch();
   const api = `*[_type == "product"]{
   _id,
   productName,
