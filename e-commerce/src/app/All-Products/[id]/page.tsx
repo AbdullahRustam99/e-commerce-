@@ -9,7 +9,7 @@ import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import { useCart } from "@/app/Context/createContext";
 interface Product {
-  _id: string;
+  _id: number;
   productName: string;
   category: string;
   price: number;
@@ -47,7 +47,7 @@ const ProductDetails = ({ params }: { params: { id: string } }) => {
   
   const [quantity, setquantity] = useState(0);
 
-  const productItem = productData.find((item: Product) => item._id === id);
+  const productItem = productData.find((item: Product) => Number(item._id) === Number(id));
   console.log(productItem);
 
   return (

@@ -192,7 +192,7 @@ const ProductDetails = () => {
               <input
                 type="checkbox"
                 className="mr-2"
-                onChange={() => filtrHandler({ priceRange: 2000 })}
+                onChange={() => filterHandler({ priceRange: 2000 })}
               />
               Under $2000
             </div>
