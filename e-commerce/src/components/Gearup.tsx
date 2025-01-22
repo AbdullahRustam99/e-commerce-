@@ -13,36 +13,44 @@ const GearUp = () => {
 
         <div className="flex flex-wrap gap-8 justify-between">
           <div className="flex flex-wrap gap-5 justify-between w-full lg:w-[48%]">
-            <Card
-              img={men1}
-              itemName="Nike Dri-FIT ADV TechKnit Ultra"
-              pries="$1300"
-              itemPries="Running Top"
-              itemdisPries="Men's Short-Sleeve"
-            />
-            <Card
-              img={men2}
-              itemName="Nike Dri-FIT Challenger"
-              pries="$1300"
-              itemPries="2-in-1 Versatile Shorts"
-              itemdisPries="Men's 18cm (approx.)"
-            />
+             <Card
+                productimageUrl={men1}
+                productName={"Nike Air Max Pulse"}
+                productCategory={"Men's Shoes"}
+                productinventory={NaN}
+                productprice={1300}
+                productcolors={[]}
+                productid=""
+              />
+             <Card
+                productimageUrl={men2}
+                productName={"Nike Air Max Pulse"}
+                productCategory={"Men's Shoes"}
+                productinventory={NaN}
+                productprice={1300}
+                productcolors={[]}
+                productid=""
+              />
           </div>
           <div className="flex flex-wrap gap-5 justify-between w-full lg:w-[48%]">
-            <Card
-              img={women2}
-              itemName="Nike Fast"
-              pries="$1300"
-              itemPries="Running Leggings with Pockets"
-              itemdisPries="Women's Mid-Rise 7/8"
-            />
-            <Card
-              img={women1}
-              itemName="Nike Dri-FIT ADV Run Division"
-              pries="$1300"
-              itemdisPries="Women's Long-Sleeve"
-              itemPries="Running Top"
-            />
+             <Card
+                productimageUrl={women1}
+                productName={"Nike Air Max Pulse"}
+                productCategory={"Men's Shoes"}
+                productinventory={NaN}
+                productprice={1300}
+                productcolors={[]}
+                productid=""
+              />
+             <Card
+                productimageUrl={women2}
+                productName={"Nike Air Max Pulse"}
+                productCategory={"Men's Shoes"}
+                productinventory={NaN}
+                productprice={1300}
+                productcolors={[]}
+                productid=""
+              />
           </div>
         </div>
       </div>

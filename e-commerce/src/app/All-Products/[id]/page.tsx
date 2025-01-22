@@ -47,7 +47,7 @@ const ProductDetails = ({ params }: { params: { id: string } }) => {
   
   const [quantity, setquantity] = useState(0);
 
-  const productItem = productData.find((item: Product) => Number(item._id) === Number(id));
+  const productItem = productData.find((item: Product) => String(item._id) === String(id));
   console.log(productItem);
 
   return (
