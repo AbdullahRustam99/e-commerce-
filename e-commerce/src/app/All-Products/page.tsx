@@ -192,7 +192,7 @@ const ProductDetails = () => {
               <input
                 type="checkbox"
                 className="mr-2"
-                onChange={(e) => filterHandler({ priceRange: 2000 })}
+                onChange={() => filtrHandler({ priceRange: 2000 })}
               />
               Under $2000
             </div>
@@ -200,7 +200,7 @@ const ProductDetails = () => {
               <input
                 type="checkbox"
                 className="mr-2"
-                onChange={(e) => filterHandler({ priceRange: 5000 })}
+                onChange={() => filterHandler({ priceRange: 5000 })}
               />
               $2000 - $5000
             </div>
@@ -208,7 +208,7 @@ const ProductDetails = () => {
               <input
                 type="checkbox"
                 className="mr-2"
-                onChange={(e) => filterHandler({ priceRange: 10000 })}
+                onChange={() => filterHandler({ priceRange: 10000 })}
               />
               $5000 - $10,000
             </div>
@@ -216,7 +216,7 @@ const ProductDetails = () => {
               <input
                 type="checkbox"
                 className="mr-2"
-                onChange={(e) => filterHandler({ priceRange: 20000 })}
+                onChange={() => filterHandler({ priceRange: 20000 })}
               />
               $10,000 - $20,000
             </div>
